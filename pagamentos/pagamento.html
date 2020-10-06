@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Fast Service | Pagamento</title>
 </head>
 <body>
+
+    <header>
+          <div>
+            <div class="logo">
+                <a href="">
+                  <img class="img-header" src="img/logo.jpeg" alt="Logo Fast Service" width="150px" height="150px">
+              </a>
+              </div>
+              <div class="nome-logo">
+                <a href="">Fast Service</a>
+              </div>
+          </div>
+          
+
+
+          <div class="nav-header-menu">
+             <nav>
+               <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Filiais</a></li>
+                  <li><a href="">Cardápio</a></li>
+                  <li><a href="">Contato</a></li>
+                  <li><a href=""><img class="icone-carrinho" src="img/carrinho-icon.png" alt=""></a></li>
+               </ul>
+             </nav>
+          </div>  
+        
+      </header>
     
     <h1>Confirmação de Pedido</h1>
-    
-    <article class="lista-pedidos">
-        <div class="seus-pedidos">
-            <h2>Seus Pedidos</h2>
-        <ul class="itens-pedidos">
-            <li>Cachorro Quente</li>
-            <li>Coca-cola</li>
-        </ul>
-        <p class="destaque">Subtotal: R$</p>
-        </div>
-
-        <div class="botao-comprar">
-            <button>Continuar comprando</button>
-        </div>
-
-        
-    </article>
-
     
 
     <div class="opcoes-entrega">
@@ -36,10 +46,10 @@
         <div class="entregas">
 
         <label for="entrega">Entrega</label>
-        <input type="checkbox" id="entrega" name="entrega" checked>
+        <input type="radio" id="entrega" name="entrega" checked>
 
         <label for="retirar-local">Retirar no local</label>
-        <input type="checkbox" id="retirar-local" name="retirar-local">
+        <input type="radio" id="retirar-local" name="entrega">
 
         </div>
 
@@ -86,11 +96,11 @@
             <div class="cartoes">
 
             <label for="mastercard">Mastercard</label>
-            <input type="checkbox" id="mastercard">
+            <input type="radio" id="mastercard" name="pagamento">
             <label for="visa">Visa</label>
-            <input type="checkbox" id="visa">
+            <input type="radio" id="visa" name="pagamento">
             <label for="vale-refeicao">Vale-Refeição</label>
-            <input type="checkbox" id="vale-refeicao">
+            <input type="radio" id="vale-refeicao" name="pagamento">
 
             </div>
             
@@ -100,17 +110,51 @@
         </div>
     </article>
 
-    <article class="resumo">
-        <h2>Resumo do pedido</h2>
-        <div class="pedidos">
-            <p>Cachorro quente</p>
-            <p>Coca-cola</p>
-            <p class="destaque">Subotal: R$</p>
-        </div>
+    <article class="lista-pedidos">
+        <div class="seus-pedidos">
+            <h2>Seus Pedidos</h2>
+        <ul class="itens-pedidos">
+            <li><p>2x</p><p>Cachorro Quente</p><p>R$ 12,00</p></li>
+            <li><p>1x</p><p>Coca-cola</p><p>R$ 5,00</p></li>
+        </ul>
+        <p class="destaque">Subtotal: R$</p>
         <p class="destaque">Frete: R$</p>
         <p class="destaque">Total: R$</p>
+
         <button>Fazer o pedido</button>
+        <button>Continuar comprando</button>
+        </div>
+
+        
     </article>
+
+    
+
+    <footer>
+        <div class="container container-footer">
+          <div class="trabalhe">
+            <h3>Trabalhe Conosco</h3>
+            <p>Venha fazer parte do nosso time!</p>
+            <p>Entre em contato e saiba mais.</p>
+          </div>
+            
+          <div class="contato">
+               <h3>CONTATO</h3>
+                  <ul>
+                     <li>+55 (XX) X XXXX-XXXX</li>
+                     <li>contato@fastservice.com</li>
+                 </ul>
+         </div>
+          <div class="redes">
+            <h3>REDES SOCIAIS</h3>
+            <ul class="ul-redes">
+              <li><a href=""><img src="img/face.png" alt=""></a></li>
+              <li><a href=""><img src="img/insta.png" alt=""></a></li>
+              <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 
    
 
