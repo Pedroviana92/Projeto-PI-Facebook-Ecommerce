@@ -1,0 +1,232 @@
+.logo {
+    position: absolute;
+    bottom: 0vh;
+    border-radius: 50%;
+}
+
+.marca {
+    float: left;
+  }
+  
+  body {
+      width: 100%;
+    background: whitesmoke;
+    opacity: 0.9;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    position: absolute;
+  }
+  
+  nav {
+    width: 100%;
+    margin-bottom: 5%;
+    top: 0%;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .header {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(241, 180, 65);
+    padding-top: 17px;
+  }
+  
+  .header ul {
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .header ul li {
+    display: inline-block;
+    background-color: rgb(241, 180, 65);
+    color: azure;
+    padding-left: 3%
+  }
+  
+  .header ul li a {
+    color: azure;
+    text-decoration: none;
+    background-color: rgba(241, 180, 65);
+  }
+  
+  .header ul li a:hover {
+    font-size: 17px;
+  }
+  
+  footer {
+      position: fixed;
+      bottom: 0;
+    width: 100%;
+    margin-top: 60px;
+    color: #fff;
+    padding-top: 30px;
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .container-footer {
+    display: flex;
+    background-color: rgb(241, 180, 65);
+    padding-left: 10%;
+  }
+  
+  .container-footer h3 {
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 18px;
+    line-height: 25px;
+    color: #c00;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .trabalhe {
+    width: 500px;
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .trabalhe p {
+    margin-top: 5px;
+    background-color: rgb(241, 180, 65);
+    padding-bottom: 0%;
+  }
+  
+  .contato {
+    width: 295px;
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .contato ul {
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .contato ul li {
+    border-left: 4px solid #c00;
+    margin-bottom: 10px;
+    background-color: rgb(241, 180, 65);
+    list-style: none;
+    position: relative;
+    right: 15%;
+  }
+  
+  .redes {
+    width: 165px;
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .ul-redes {
+    display: flex;
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .ul-redes li {
+    margin: 0 auto;
+    background-color: rgb(241, 180, 65);
+    list-style: none;
+    position: relative;
+    right: 25%;
+    padding: 1%;
+  }
+  
+  .ul-redes img {
+    width: 50px;
+    background-color: rgb(241, 180, 65);
+  }
+  
+  .ul-redes img:hover {
+    transform: scale(1.1);
+  }
+    
+.banners {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.slides {
+    position: relative;
+    top: 50vh;
+    margin-bottom: 20%;
+    margin-top: 30%;
+}
+
+section {
+    position: relative;
+  margin: 8%;
+  text-align: center;
+  font-size: 25px;
+  border: 1px solid grey;
+  border-radius: 10%;
+  top: 10vh;
+}
+
+.slides:hover {
+    transform: scale(1.1);
+  }
+
+.carrossel {
+    position: relative;
+    left: 3%;
+    top: 15vh;
+}
+
+.filial {
+    color: white;
+    background-color: none;
+    margin-bottom: 0vh;
+    margin-top: 10vh;
+  }
+  
+  .filial h5 {
+    background-color: none;
+  }
+  
+  .filial p {
+    background-color: none;
+  }
+
+
+@media (max-width: 992px){
+    .filial {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slides {
+        top: 120vh
+    }
+
+
+    section {
+        display: none;
+    }
+  
+    .logo {
+      right: 94%;
+    }
+  }
+  
+  @media (min-width: 993px) and (max-width: 1200px) {
+    section {
+      display: none;
+    }
+    .logo {
+      right: 94.8%;
+    }
+    .slides {
+        top: 60vh
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    .logo {
+      right: 95.5%;
+    }
+
+    .paragrafo {
+        display: none;
+    }
+  }
