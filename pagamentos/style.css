@@ -148,84 +148,135 @@ h2 {
 a {
     text-decoration: none;
   }
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  .container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: rgb(241, 180, 65);
-    width: 80vw;
-   
- }
- .img-header {
-     border-radius: 70px;
- }
- .nome-logo a {
-     margin-left: 20px;
-     color: white;
- }
-.nav-header-menu{
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.nav-header-menu ul {
-    list-style: none;
-}
-.nav-header-menu ul li {
-    margin-bottom: 10px;;
+    /* padding: 15px 0; */
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    width: 220px;
+    float: left;
+  }
+  
+  .img-header {
+    margin-left: 50px;
+    border-radius: 50%;
+    width: 100px;
+  }
+  .nome-logo {
+    width: 155px;
+    margin-top: 38px;
+    float: left;
+  }
+  .nome-logo a {
+    color: #fff;
     font-weight: bold;
-    color: white;
-}
-.nav-header-menu ul li a{
-    color: white;
-}
-.logo-principal {
-    display: flex;
-    flex-direction: column;
-}
-footer {
-    
+    font-size: 25px;
+  }
+  .nav {
+    width: 585px;
+    float: left;
+    margin-top: 25px;
+  }
+  .header_menu {
+    text-align: right;
+  }
+  
+  .header_menu ul li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+  .header_menu ul li {
+      position: relative;
+      bottom: 20px;
+  }
+  
+  .header_menu ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 0;
+  }
+  .header_menu ul li a img {
+    width: 35px;
+  }
+  
+  
+  .header_menu ul li a:hover {
+    color: #c00;
+  }
+
+  footer {
+    margin-top: 60px;
+    width: 100vw;
+    height: 150px;
     color: #fff;
     padding-top: 30px;
     background-color: rgb(241, 180, 65);
+  }
+  
+  .container-footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    width: 85vw;
-
   }
-  .ul-redes {
-      list-style: none;
-  }
-  .ul-redes img {
-      width: 40px;
-      height: 40px;
+  .container-footer h3 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #c00;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold
   }
   .trabalhe {
-      padding: 10px;
+    width: 500px;
   }
-  h3 {
-      color: #c00;
+  
+  .trabalhe p {
+    margin-top: 5px;
+  }
+  .contato {
+    width: 295px;
   }
   .contato ul {
-      list-style: square;
+      list-style: none;
   }
-  
-  
-  
-
-  
-  
- 
+  .contato ul li {
+    border-left: 4px solid #c00;
+    margin-bottom: 10px;
+    padding-left: 7px;
+  }
+  .redes {
+    width: 165px;
+  }
+  .ul-redes {
+    display: flex;
+    list-style: none;
+  }
+  .ul-redes li {
+    margin: 0 auto;
+  }
+  .ul-redes img{
+    width: 50px;
+  }
 
 @media (min-width: 460px) {
-     header {
-         width: 100vw;
-     }
-     
+    
      .lista-endereco input, .cartao-online input, .cartao-entrega input, .dinheiro input {
  
         width:40vw;
@@ -248,25 +299,63 @@ footer {
         margin-top: 20px;
         width: 42vw;
     }
-    footer {
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100vw;
-    }
-    .nav-header-menu ul {
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-header-menu li {
-        margin-right: 20px;
-    }
-    .nav-header-menu li:last-child {
-        position: relative;
-        bottom: 20px;
-    }
-    .nav-header-menu ul {
-        margin-top: 40px;
-    }
-    
     
  }
+
+ @media (max-width: 600px) {
+    .container {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+      } 
+      .container-footer{
+        display: block;
+      }
+      /* HEADER */
+      .header {
+        position: relative;
+        width: 120vw;
+        height: 330px;
+      }
+      .logo {
+        width: 100%;
+        display: block;
+      }
+      .logo a img {
+        display: block;
+        margin: 0 auto;
+      }
+      .nome-logo {
+        width: 100%;
+        margin-top: 15px;
+      }
+      .nome-logo a {
+        display: block;
+        text-align: center;
+      }
+      .nav {
+        width: 300px;
+        margin-top: 0;
+      }
+      .nav ul li {
+        width: 300px;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0;
+        border-bottom: 1px solid khaki;
+      }
+      footer {
+        margin-top: 0;
+        padding-top: 20px;
+        height: 400px;
+      }
+      .redes {
+        width: 215px;
+      }
+      .ul-redes {
+        margin-top: -10px;
+      }
+    
+    }
+ 
