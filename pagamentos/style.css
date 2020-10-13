@@ -8,8 +8,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
-    margin-right: 30px;
     
 }
 body::after {
@@ -26,30 +24,92 @@ body::after {
     z-index: -1;   
   }
 
-h1 {
-    font-size: 25px;
-    border: solid #a0a0a0 1px;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
 h2 {
     color: #c00;
     text-align: center;
 }
-.lista-pedidos {
-    width: 80vw;
-    border: solid #a0a0a0 1px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  
 }
-.seus-pedidos {
-    display: flex;
-    flex-direction: column;
+.resumo {
+  width: 320px;
+  height: 50vh;
+  /* background-color: burlywood; */
+  border-radius: 30px;
+  border: solid #c00 1px;
+  padding: 10px;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.subtotal{
+  display: flex;
+}
+.taxa-entrega {
+  display: flex;
+}
+
+.ref {
+  width: 215px;
+  color: #c00;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.valor {
+  width: 105px;
+  font-size: 14px;
+  text-align: right;
+}
+.total {
+  margin-top: 20px;
+  display: flex;
+  border-bottom: 1px solid #c00;
+}
+.total-h3 {
+  width: 215px;
+  font-size: 21px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+.valor-total {
+  width: 105px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+/* .finalizar-pedido a {
+  display: block;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 10px; 
+  padding-top: 13px;
+  text-align: center;
+  transition: 0.3s;
+  padding: 20px;
+} */
+.finalizar-pedido button {
+  color: #fff;
+  background-color: #31ab10;
+  border: solid 1px #31ab10;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.finalizar-pedido button:hover {
+  border-radius: 50px;
+  background-color: #008000;
 }
 
 
@@ -77,54 +137,94 @@ h2 {
 .lista-endereco {
     display: flex;
     flex-direction: column;
-    border-bottom: solid #a0a0a0 1px;
     align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    border: solid #c00 1px;
+    border-radius: 30px;
+    margin-right: 50px;
 }
 .opcoes-pagamento {
     align-self: center;
     text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
 }
-.opcoes-pagamento p {
-    color: #008000;
-    border: #a0a0a0 solid 2px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 40vw;
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.opcoes input {
+  margin-bottom: 10px;
+  
 }
 .cartoes {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-.cartoes label {
-    font-size: 20px;
-}
-.cartoes input {
-    range: 1px;
-}
+
 .cartao-online {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.cartao-numeros {
+  display: flex;
+  
+}
+#validade-cartao, #CVV {
+  width: 145px;
+}
+.validade, .cvv-cartao {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+  align-items: center;
+
 }
 .dinheiro {
     display: flex;
     flex-direction: column;
 }
 
-.lista-endereco label, .cartao-online label, .cartao-entrega label, .dinheiro label {
+.lista-endereco label, .cartao-online label, .dinheiro label {
     margin-bottom: 10px;
 }
-.lista-endereco input, .cartao-online input, .cartao-entrega input, .dinheiro input {
-    margin-bottom: 15px;
-    border: #a0a0a0 solid 2px;
-    border-radius: 10px;
-    width:80vw;
-    height: 40px;
+.lista-endereco input, .cartao-online input, .dinheiro input {
+  margin-bottom: 15px;
+  border: #a0a0a0 solid 2px;
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
 }
+.numero-complemento {
+  display: flex;
+}
+.numero-complemento input {
+  width: 145px;
+}
+.numero, .complemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5px;
+  
+}
+
 .pagamento {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border: solid #c00 1px;
+    border-radius: 30px;
+    margin-right: 50px;
+    position: relative;
+    top: 20px;
 }
 .destaque {
     color: #008000;
@@ -133,6 +233,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 100px;
 }
 .lista-pedidos button {
     width: 40vh;
@@ -274,33 +375,6 @@ a {
   .ul-redes img{
     width: 50px;
   }
-
-@media (min-width: 460px) {
-    
-     .lista-endereco input, .cartao-online input, .cartao-entrega input, .dinheiro input {
- 
-        width:40vw;
-    }
-    .lista-pedidos {
-        width: 40vw;
-    }
-    .lista-endereco, .pagamento {
-        border: solid #c00 1px; 
-        border-top-left-radius: 10px;
-        border-top-right-radius: 20px;
-        padding: 10px;
-        margin-top: 20px;
-    }
-    .lista-pedidos {
-        border: solid #c00 1px; 
-        border-top-left-radius: 10px;
-        border-top-right-radius: 20px;
-        padding: 10px;
-        margin-top: 20px;
-        width: 42vw;
-    }
-    
- }
 
  @media (max-width: 600px) {
     .container {
