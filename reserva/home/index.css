@@ -1,62 +1,102 @@
-.logo {
-    position: absolute;
-    bottom: 0vh;
-    border-radius: 50%;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    
 }
 
-.marca {
-    float: left;
-  }
-  
-  body {
-      width: 100%;
-    background: whitesmoke;
-    opacity: 0.9;
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    position: absolute;
-  }
-  
-  nav {
-    width: 100%;
-    margin-bottom: 5%;
-    top: 0%;
-    position: fixed;
-    z-index: 1;
-  }
-  
-  .header {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(241, 180, 65);
-    padding-top: 17px;
-  }
-  
-  .header ul {
-    background-color: rgb(241, 180, 65);
-  }
-  
-  .header ul li {
-    display: inline-block;
-    background-color: rgb(241, 180, 65);
-    color: azure;
-    padding-left: 3%
-  }
-  
-  .header ul li a {
-    color: azure;
-    text-decoration: none;
-    background-color: rgba(241, 180, 65);
-  }
-  
-  .header ul li a:hover {
-    font-size: 17px;
-  }
-  
-  footer {
-      position: fixed;
-      bottom: 0;
+body::after {
+  content: "";
+  background: url(/images/background.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.16;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;   
+}
+
+.nome-logo a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(241, 180, 65);
+  z-index: 50;
+}
+
+.logo {
+  width: 220px;
+  float: left;
+}
+
+.img-header {
+  margin-left: 50px;
+  border-radius: 50%;
+  width: 100px;
+}
+
+.nome-logo {
+  width: 155px;
+  margin-top: 38px;
+  float: left;
+}
+.nome-logo a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+.nav {
+  margin-top: 60px;
+  position: absolute;
+  left: 47%;
+}
+.header_menu {
+  text-align: right;
+}
+
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+.header_menu ul li {
+    position: relative;
+    bottom: 20px;
+}
+
+.header_menu ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.header_menu ul li a img {
+  width: 35px;
+}
+
+
+.header_menu ul li a:hover {
+  color: #c00;
+}
+
+footer {
+  bottom: 0;
     width: 100%;
     margin-top: 60px;
     color: #fff;
@@ -141,24 +181,23 @@
     
 .banners {
     display: flex;
-    position: absolute;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .slides {
-    position: relative;
-    top: 50vh;
-    margin-bottom: 20%;
-    margin-top: 30%;
+    margin: 10vh;;
 }
 
 section {
-    position: relative;
+  background-color: white;
+  position: relative;
   margin: 8%;
   text-align: center;
   font-size: 25px;
-  border: 1px solid grey;
+  padding: 1%;
+  border: 2px solid black;
   border-radius: 10%;
   top: 10vh;
 }
@@ -169,64 +208,61 @@ section {
 
 .carrossel {
     position: relative;
-    left: 3%;
-    top: 15vh;
+    top: 18vh;
 }
 
-.filial {
-    color: white;
-    background-color: none;
-    margin-bottom: 0vh;
-    margin-top: 10vh;
-  }
-  
-  .filial h5 {
-    background-color: none;
-  }
-  
-  .filial p {
-    background-color: none;
-  }
 
-
-@media (max-width: 992px){
-    .filial {
-        width: 100%;
-        text-align: center;
+@media (max-width: 600px) {
+  .container-fluid {
+      margin: 0 auto;
+      position: relative;
+    } 
+    .container-footer{
+      display: block;
+    }
+    .header {
+      position: relative;
+      height: 330px;
     }
 
-    .slides {
-        top: 120vh
-    }
-
-
-    section {
-        display: none;
-    }
-  
     .logo {
-      right: 94%;
+      width: 100%;
     }
-  }
-  
-  @media (min-width: 993px) and (max-width: 1200px) {
-    section {
-      display: none;
-    }
-    .logo {
-      right: 94.8%;
-    }
-    .slides {
-        top: 60vh
-    }
-  }
-  
-  @media (min-width: 1201px) {
-    .logo {
-      right: 95.5%;
+    
+    .nome-logo {
+      width: 100%;
+      margin-top: 15px;
+      margin-left: 25px;
     }
 
-    .paragrafo {
-        display: none;
+    .img-header {
+      margin-left: 105px;
     }
+    .nome-logo a {
+      display: block;
+      text-align: center;
+    }
+    .nav {
+      width: 300px;
+      top: 22vh;
+      left: -5%;
+    }
+    .nav ul li {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      border-bottom: 1px solid khaki;
+    }
+    footer {
+      margin-top: 0;
+      padding-top: 20px;
+      height: 400px;
+    }
+    .redes {
+      width: 215px;
+    }
+    .ul-redes {
+      margin-top: -10px;
+    }
+  
   }
