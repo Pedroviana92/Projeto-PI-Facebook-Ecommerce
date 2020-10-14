@@ -42,14 +42,18 @@
           <div class="div-nome-prato">
             <h4>Pequi com frango</h4>  
           </div>
-          <div class="div-quantidade">
-            <input type="text">
-          </div>
+          <!-- <div class="div-quantidade">
+            <input type="text" value="1">
+          </div> -->
           <div class="div-valor">
-            <p>R$ 20,00</p>
+            <div class="posicionamento-div-valor">
+              <p>R$</p>
+              <p class="valorr">20.50</p>
+            </div>
+            
           </div>
           <div class="div-fechar">
-            <p>X</p>
+            <p id="excluir" >X</p>
           </div>
           
         </div>
@@ -60,14 +64,18 @@
           <div class="div-nome-prato">
             <h4>Pequi com frango</h4>  
           </div>
-          <div class="div-quantidade">
-            <input type="text">
-          </div>
+          <!-- <div class="div-quantidade">
+            <input type="text" value="1">
+          </div> -->
           <div class="div-valor">
-            <p>R$ 20,00</p>
+            <div class="posicionamento-div-valor">
+              <p>R$</p>
+              <p class="valorr">20.50</p>
+            </div>
+            
           </div>
           <div class="div-fechar">
-            <p>X</p>
+            <p id="excluir" >X</p>
           </div>
           
         </div>
@@ -78,14 +86,18 @@
           <div class="div-nome-prato">
             <h4>Pequi com frango</h4>  
           </div>
-          <div class="div-quantidade">
-            <input type="text">
-          </div>
+          <!-- <div class="div-quantidade">
+            <input type="text" value="1">
+          </div> -->
           <div class="div-valor">
-            <p>R$ 20,00</p>
+            <div class="posicionamento-div-valor">
+              <p>R$</p>
+              <p class="valorr">20.50</p>
+            </div>
+            
           </div>
           <div class="div-fechar">
-            <p>X</p>
+            <p id="excluir" >X</p>
           </div>
           
         </div>
@@ -96,14 +108,18 @@
           <div class="div-nome-prato">
             <h4>Pequi com frango</h4>  
           </div>
-          <div class="div-quantidade">
-            <input type="text">
-          </div>
+          <!-- <div class="div-quantidade">
+            <input type="text" value="1">
+          </div> -->
           <div class="div-valor">
-            <p>R$ 20,00</p>
+            <div class="posicionamento-div-valor">
+              <p>R$</p>
+              <p class="valorr">20.50</p>
+            </div>
+            
           </div>
           <div class="div-fechar">
-            <p>X</p>
+            <p id="excluir" >X</p>
           </div>
           
         </div>
@@ -114,34 +130,42 @@
           <div class="div-nome-prato">
             <h4>Pequi com frango</h4>  
           </div>
-          <div class="div-quantidade">
-            <input type="text">
-          </div>
+          <!-- <div class="div-quantidade">
+            <input type="text" value="1">
+          </div> -->
           <div class="div-valor">
-            <p>R$ 20,00</p>
+            <div class="posicionamento-div-valor">
+              <p>R$</p>
+              <p class="valorr">20.50</p>
+            </div>
+            
           </div>
           <div class="div-fechar">
-            <p>X</p>
+            <p id="excluir" >X</p>
           </div>
           
         </div>
+                
       </main>
       <aside class="resumo">
         <h3 class="resumo-h3">Resumo do Pedido</h3>
         <div class="subtotal">
           <p class="ref">Subtotal</p>
-          <p class="valor">R$ 20,00</p>
+          <p class="valor">R$</p>
+          <p id="subtotal">0</p>
         </div>
         <div class="taxa-entrega">
           <p class="ref">Taxa de entrega</p>
-          <p class="valor">R$5,00</p>
+          <p class="valor">R$</p>
+          <p id="taxa-entrega">10</p>
         </div>
         <div class="total">
           <h3 class="total-h3">Total</h3>
-          <p class="valor-total">R$ 25,00</p>
-        </div>
+          <p class="cifrao">R$</p>
+          <p id="valorTotal" class="valor-total"></p>
+        </div> 
         <div class="finalizar-pedido">
-          <a href=""><p>Finalizar Pedido</p></a>
+          <a href="../pagamentos/pagamento.html"><p>Finalizar Pedido</p></a>
         </div>
       </aside>
     </div>
@@ -172,5 +196,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>

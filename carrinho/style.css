@@ -151,6 +151,8 @@ h3 {
   border-radius: 10px;
   display: flex;
   position: relative;
+
+  justify-content: space-between;
   /* background-color: chocolate; */
 }
 
@@ -184,16 +186,25 @@ h3 {
 }
 
 .div-valor {
-  width: 100px;
+  width: 95px;
   padding-top: 10px;
   color: #c00;
   font-weight: bold;
+  display: flex;
   /* background-color: darkcyan; */
 }
+.posicionamento-div-valor {
+  display: flex;
+  margin: 0 auto;
+}
 .div-fechar {
-  /* background-color: darkkhaki; */
-  width: 10px;
+  width: 15px;
+  text-align: right;
   padding-top: 10px;
+  margin-right: 10px;
+}
+.div-fechar p {
+  cursor: pointer;
 }
 .resumo {
   background-color: #fff;
@@ -217,7 +228,7 @@ h3 {
 }
 
 .ref {
-  width: 215px;
+  width: 250px;
   color: #c00;
   font-weight: bold;
   font-size: 14px;
@@ -241,11 +252,15 @@ h3 {
   padding-bottom: 10px;
   border-bottom: none;
 }
-.valor-total {
+.cifrao {
   width: 105px;
   font-size: 20px;
   font-weight: bold;
   text-align: right;
+}
+.valor-total {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .finalizar-pedido {
@@ -356,9 +371,6 @@ footer {
   .div-nome-prato {
     width: 179px;
   }
-  .div-fechar {
-    padding-right: 20px;
-  }
   .resumo {
     width: 256px;
     margin-left: 30px;
@@ -367,7 +379,8 @@ footer {
     width: 140px;
   }
   .valor-total {
-    width: 116px;
+    /* width: 116px; */
+    /* text-align: right; */
   }
   /* FOOTER */
   footer {
@@ -434,15 +447,18 @@ footer {
     width: 300px;
   }
   .produto {
-    width: 100%;
+    width: 270px;
     height: 80px;
   }
+  .div-prato {
+    width: 74px;
+  }
   .div-prato img {
-    margin-top: 12px;
+    margin-top: 14px;
   }
   .div-nome-prato {
     padding-left: 5px;
-    
+    width: 76px;
   }
   .resumo {
     margin-top: 40px;
