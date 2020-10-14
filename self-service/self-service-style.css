@@ -49,6 +49,18 @@ a {
     text-decoration: underline rgb(241, 180, 65);
 }
 
+.botaoqte {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(241, 180, 65);
+    border-radius: 20%;
+}
+
+.saidaqte {
+    border-radius: 10%;
+    border-color: rgb(241, 180, 65);
+}
+
 .conteiner-fluid {
     /* display: flex; */
     /* flex-direction: row; */
