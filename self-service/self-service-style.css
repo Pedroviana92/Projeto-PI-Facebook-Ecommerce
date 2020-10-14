@@ -40,6 +40,15 @@ a {
     text-decoration: underline rgb(241, 180, 65);
 }
 
+.botao-carrinho {
+    display: flex;
+    margin: 0 auto;
+    width: 50px;
+    margin-top: 2%;
+    font-size: 30px;
+    text-decoration: underline rgb(241, 180, 65);
+}
+
 .conteiner-fluid {
     /* display: flex; */
     /* flex-direction: row; */
@@ -196,9 +205,3 @@ footer {
     color: rgb(241, 180, 65);
     margin-left: 20px;
 }
-
-
-/* .card-img {
-    width: 100px;
-    height: 50px;
-} */
