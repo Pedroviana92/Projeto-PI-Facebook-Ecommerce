@@ -1,8 +1,21 @@
 body {
-    margin: 0, 0, 0, 0;
-    padding: 0, 0, 0, 0;
-    background-image: url(./imagens/background-self.jpg);
-    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body::after {
+    content: "";
+    background: url(./imagens/background-self.jpg);
+    width: 100%;
+    opacity: 0.16;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
 }
 
 * {
@@ -12,6 +25,38 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.comida {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline rgb(241, 180, 65);
+}
+
+.bebidas {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: underline rgb(241, 180, 65);
+}
+
+.botao-carrinho {
+    display: flex;
+    margin: 0 auto;
+    width: 50px;
+    margin-top: 2%;
+    font-size: 30px;
+    text-decoration: underline rgb(241, 180, 65);
+}
+
+.conteiner-fluid {
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin-top: 100px;
+}
+
+.card {
+    margin-top: 10px;
 }
 
 .container {
@@ -160,9 +205,3 @@ footer {
     color: rgb(241, 180, 65);
     margin-left: 20px;
 }
-
-
-/* .card-img {
-    width: 100px;
-    height: 50px;
-} */
